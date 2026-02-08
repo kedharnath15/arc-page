@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Instrument+Serif:ital@0;1&display=swap');
+
+:root{
+    --bg: #fff;
+    --fg: #000;
+    --a: #00f;
+
+    @media (prefers-color-scheme: dark) {
+        --bg: #000;
+        --fg: #fff;
+        --a: #f00;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: var(--bg);
+    display: flex;
+    justify-content: center;
+    font-family: "Instrument Sans", sans-serif;
+}
+
+
+#page {
+    background: var(--bg);
+    color: var(--fg);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#avatar {
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+#arcet {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.5rem;
+}
+
+li {
+    list-style-type: "🚗";
+    padding: 0.25rem;
+}
+
+h1, h2 {
+    font-family: "Instrument Serif", serif;
+}
+
+a{
+    color: var(--a);
+    text-decoration: none;
+}
